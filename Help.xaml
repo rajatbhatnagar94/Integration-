@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Integration2.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid Background="{StaticResource PhoneAccentBrush}">
+        <ScrollViewer>
+        <StackPanel Margin="12">
+        <TextBlock TextWrapping="Wrap" Text="Hello, friends. This app has two parts. You can evaluate an expression or find the integration of a given expression. You should keep in mind that all the values for Trigonometric functions should be given in radians. So suppose you want to find the value of Sin(y)+Cos(y) where y=90`(degree) then you can set the value of y as PI/2 and then press the '=' button. In similar way you can perform integration. Now here is a sample given to integrate a function." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Equation = y^2+2y+1+e^1" Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Lower Limit = 0" Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Upper Limit = 10" Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="For performing this, write the equation using the buttons on the calculator, and then set the upper and lower limits under the 'Advanced' tab. And then press the Integration icon on the bottom of the screen. Your result will appear on the screen." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="The correct Syntax for some functions are as follows:" Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Sin(y+3), (y^2+y^3), Log10(2)(Performs logarithm with base 10), Sin(PI/2), Sin(Cos(3y)), Loge(2y)(Performs Logarithm with base e) etc." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="You can set the limits and value of the variable 'y' under the Advanced tab." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Apart from this you can use it as a simple calculator as well." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Note: For finding the value of expression press '=' button and for performing integration press the app icon." Foreground="{StaticResource PhoneForegroundBrush}"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" Text="Thank you!" Foreground="{StaticResource PhoneForegroundBrush}"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>
